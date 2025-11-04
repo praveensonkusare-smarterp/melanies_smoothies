@@ -44,5 +44,8 @@ if ingredients_list and name_on_order:
         # Show success message
             st.success("Your Smoothie is ordered!", icon="✅")
 
+import requests
+smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
+st.text(smoothiefroot_response)
 
         
