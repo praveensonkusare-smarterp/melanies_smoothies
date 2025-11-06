@@ -20,7 +20,7 @@ session = cnx.session()
 # Fetch fruit options
 my_dataframe = session.table("smoothies.public.fruit_options").select(col("FRUIT_NAME"),col('SEARCH_ON'))
 # fruit_list = [row["FRUIT_NAME"] for row in my_dataframe.collect()]
-st.datafram(data=my_dataframe, use_container_width = True)
+st.dataframe(data=my_dataframe, use_container_width = True)
 
 st.stop()
 
