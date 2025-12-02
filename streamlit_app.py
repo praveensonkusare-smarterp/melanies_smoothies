@@ -30,10 +30,10 @@ if ingredients_list and name_on_order:
         # Build the string manually with spaces (no commas)
         # Includes trailing space
         # -----------------------------
-        ingredients_string = ""
+        ingredients_string = ''
 
         for fruit_chosen in ingredients_list:
-            ingredients_string += fruit_chosen + " "
+            ingredients_string += fruit_chosen + ''
 
         # Build SQL INSERT just like the workshop
         my_insert_stmt = """
